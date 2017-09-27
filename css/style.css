@@ -1,0 +1,170 @@
+.container {
+  width: 300px;
+}
+#task_scroll {
+  height: 200px;
+  overflow-y: scroll;
+}
+#task_scroll::-webkit-scrollbar {
+  display: none;
+}
+#task_container {
+  overflow: hidden;
+}
+.cards {
+  width: 600px;
+  transition: 0.5s;
+}
+.cards.move {
+  transform: translate(-300px, 0);
+}
+.task {
+  float: left;
+  width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  line-height: 40px;
+  border-top: solid 1px lightgray;
+}
+.cards:first-child .task {
+  border-top: none;
+}
+.input_div {
+  display: inline-block;
+  width: 250px;
+  margin: 0 auto;
+  user-select: none;
+}
+.input_div:hover {
+  cursor: default;
+}
+input {
+  width: 80%;
+  border: solid 1px lightgray;
+  font-size: 14px;
+  box-shadow: none;
+  outline: none;
+  text-align: center;
+}
+.rm_btn {
+  display: inline-block;
+}
+.rm_btn img {
+  cursor: pointer;
+}
+.edit_button {
+  display: inline-block;
+}
+.edit_button img {
+  cursor: pointer;
+}
+.done_card {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  background-color: red;
+  float: left;
+  width: 300px;
+  height: 50px;
+  user-select: none;
+}
+.done_card:hover {
+  cursor: default;
+}
+#add_task {
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-top: none;
+  transition: 0.3s;
+  border: solid 1px lightgray;
+}
+#add_task:hover {
+  cursor: pointer;
+  background-color: #393E46;
+  color: white;
+}
+#calendar_UI {
+  width: 300px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.btn_contain ,#this_month_contain {
+  float: left;
+  width: 100px;
+  height: 30px;
+  justify-content: space-between;
+}
+#previous_month, #this_month_contain, #next_month {
+  text-align: center;
+  line-height: 30px;
+}
+.change_btn {
+  color: #F5FEFF;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #404969;
+  border-radius: 100%;
+}
+#previous_month:hover, #next_month:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+#this_month_contain:hover {
+  cursor: pointer;
+  user-select: none;
+}
+
+#calendar_week {
+  border-bottom: none;
+  margin: 0 auto;
+  border-collapse: collapse;
+  user-select: none;
+  cursor: default;
+}
+#calendar_week tr td {
+  width: 40px;
+  font-size: 12px;
+  text-align: center;
+}
+#calendar table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+#calendar table tr td {
+  width: 40px;
+  height: 40px;
+  border: solid 1px lightgray;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+.done {
+  background-color: red;
+  color: white;
+}
+
+.popup_task {
+  margin: 0 auto;
+	display: block;
+	bottom: -40px;
+	left: 15px;
+	z-index: 9999;
+  box-sizing: border-box;
+  text-align: center;
+	width: 250px;
+	height: auto;
+	padding: 0.3em 0.5em;
+	color: white;
+	background: #404969;
+  border-radius: 20px;
+}
